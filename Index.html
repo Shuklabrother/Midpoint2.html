@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Midpoint Calculator</title>
+</head>
+<style>
+input{
+  font-size: 10px;
+    width: 20em;
+    height: 1em;
+   border-radius: 10px;
+}
+button{
+  font-size: 10px;
+    width: 6em;
+    height: 2em;
+   border-radius: 10px;
+   background-color: #10e7f8;
+}
+</style>
+<body>
+  <div class="container" align="center">
+    <h2>Midpoint Calculator</h2>
+    <input type="number" id="x" placeholder="x" />
+    <br/>
+    <input type="number" id="y" placeholder="y" />
+    
+    <br />
+    <br/>
+    <button onclick="calculateMidpoint()">Calculate</button>
+  
+  </div>
+<script>
+function calculateMidpoint() {
+  var a = parseFloat(document.getElementById("x").value);
+  var b = parseFloat(document.getElementById("y").value);
+  var c = (a + b)/2;
+  document.write(c);
+}
+</script>
+</body>
+</html>
